@@ -1,1 +1,1 @@
-Repository for code featured from the book Create GUIs
+Repository for code featured in the book Create GUIs
