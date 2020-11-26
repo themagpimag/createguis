@@ -20,12 +20,12 @@ def add_dot():
     board.set_pixel(x, y, "red")
     
     speed = 1000
-    if score > 10:
-        speed = 500
+    if score > 30:
+        speed = 200
     elif score > 20:
         speed = 400
-    elif score > 30:
-        speed = 200
+    elif score > 10:
+        speed = 500
     board.after(speed, add_dot)
 
 def destroy_dot(x,y):

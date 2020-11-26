@@ -9,7 +9,6 @@ from random import randint
 GRID_SIZE = 5
 score = 0
 
-
 # Functions -------------
 
 def add_dot():
@@ -20,13 +19,13 @@ def add_dot():
     board.set_pixel(x, y, "red")
 
     speed = 1000
-    if score > 10:
-        speed = 500
+    if score > 30:
+        speed = 200
     elif score > 20:
         speed = 400
-    elif score > 30:
-        speed = 200
-
+    elif score > 10:
+        speed = 500
+    
     all_red = True
     for x in range(GRID_SIZE):
         for y in range(GRID_SIZE):
